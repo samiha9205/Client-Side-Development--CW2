@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Menu — TastyBites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">TastyBites</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn-sm ms-3 btn-outline-danger" href="contact.html#reservations">Reserve</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <header class="container section">
+    <h1 class="section-title">Menu</h1>
+    <p class="lead">Handmade, seasonal dishes — designed to share.</p>
+    <div class="mb-3">
+      <button class="btn btn-outline-secondary btn-sm" data-filter="all">All</button>
+      <button class="btn btn-outline-secondary btn-sm" data-filter="starters">Starters</button>
+      <button class="btn btn-outline-secondary btn-sm" data-filter="mains">Mains</button>
+      <button class="btn btn-outline-secondary btn-sm" data-filter="desserts">Desserts</button>
+      <button class="btn btn-outline-secondary btn-sm" data-filter="drinks">Drinks</button>
+    </div>
+  </header>
+
+  <section class="container section" aria-labelledby="starters">
+    <h2 id="starters" class="section-title">Starters</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <article class="card menu-card" data-category="starters" aria-labelledby="s1">
+          <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=7c1b7f0b0f3b4e5d6c7a8b9c0d1e2f3a" class="card-img-top" alt="Beetroot salad">
+          <div class="card-body">
+            <h3 id="s1">Beetroot & Goat's Cheese</h3>
+            <p>Roasted beetroot, whipped goats cheese, hazelnut crumb.</p>
+            <p class="mb-0 kv">£8</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card menu-card" data-category="starters" aria-labelledby="s2">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=3b6a7c8d9e0f1a2b3c4d5e6f7a8b9c0d" class="card-img-top" alt="Calamari">
+          <div class="card-body">
+            <h3 id="s2">Crispy Calamari</h3>
+            <p>Lightly fried, lemon aioli, parsley.</p>
+            <p class="mb-0 kv">£9</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card menu-card" data-category="starters" aria-labelledby="s3">
+          <img src="img2.jpeg" class="card-img-top" alt="Soup">
+          <div class="card-body">
+            <h3 id="s3">Soup of the Day</h3>
+            <p>Ask your server for today's speciality. Served with sourdough.</p>
+            <p class="mb-0 kv">£6</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" aria-labelledby="mains">
+    <h2 id="mains" class="section-title">Mains</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <article class="card menu-card" data-category="mains" aria-labelledby="m1">
+          <img src="img01.jpg" class="card-img-top" alt="Steak">
+          <div class="card-body">
+            <h3 id="m1">Charred Ribeye</h3>
+            <p>28-day aged ribeye, buttered greens, rosemary jus.</p>
+            <p class="mb-0 kv">£28</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card menu-card" data-category="mains" aria-labelledby="m2">
+          <img src="https://images.unsplash.com/photo-1546069901-eacef0df6022?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=4f7e4bc9d2b5b9b3a0c4e3a9b6f4c2d9" class="card-img-top" alt="Pasta">
+          <div class="card-body">
+            <h3 id="m2">Tagliatelle Ragu</h3>
+            <p>Handmade pasta, slow-cooked beef ragu, pecorino.</p>
+            <p class="mb-0 kv">£16</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-4">
+        <article class="card menu-card" data-category="mains" aria-labelledby="m3">
+          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=2f0f79d1f0d85b86b92f5d3f8a1d3a5a" class="card-img-top" alt="Sea bass">
+          <div class="card-body">
+            <h3 id="m3">Seared Sea Bass</h3>
+            <p>Pan-seared, lemon beurre blanc, seasonal greens.</p>
+            <p class="mb-0 kv">£22</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" aria-labelledby="desserts">
+    <h2 id="desserts" class="section-title">Desserts & Drinks</h2>
+    <div class="row g-3">
+      <div class="col-md-4">
+        <article class="card menu-card" data-category="desserts" aria-labelledby="d1">
+          <img src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&s=0b6c5f8ca0f5d4d8a6f3b2a1e4c8b7a1" class="card-img-top" alt="cake">
+          <div class="card-body">
+            <h3 id="d1">Lemon Olive Oil Cake</h3>
+            <p>Mascarpone, citrus syrup.</p><p class="mb-0 kv">£7</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-md-8">
+        <p>We offer an evolving dessert list and a curated drinks menu — ask for today's pairing recommendations.</p>
+        <p><a class="btn btn-outline-secondary" href="contact.html#reservations">Ask about pairings</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" aria-labelledby="allergens">
+    <h2 id="allergens" class="section-title">Allergens & Dietary</h2>
+    <p>We list allergens on menus on request. Please inform staff of allergies. Vegetarian and vegan options are available.</p>
+    <ul>
+      <li>Vegetarian options: clearly marked</li>
+      <li>Gluten-free alternatives: available on request</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h5>TastyBites</h5>
+        <p class="footer-note">Authentic food, warm hospitality — since 2010. 123 Riverwalk Ave, London</p>
+      </div>
+      <div class="col-md-3">
+        <h6>Opening</h6>
+        <p class="mb-0">Mon–Sun: 11:00 — 22:00</p>
+        <p id="openStatus" class="mb-0"></p>
+      </div>
+      <div class="col-md-3 text-md-end">
+        <small>&copy; TastyBites 2025 • Built for COM109 coursework</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
