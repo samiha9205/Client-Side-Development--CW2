@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gallery — TastyBites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">TastyBites</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn-sm ms-3 btn-outline-danger" href="contact.html#reservations">Reserve</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="container section" aria-labelledby="gallery-heading">
+    <h1 id="gallery-heading" class="section-title">Gallery</h1>
+    <p class="lead">A snapshot of the restaurant, events and some favourite dishes.</p>
+    <div class="gallery-grid mt-4">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=aa111bbb222" alt="Interior" class="img-fluid rounded">
+      <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=bb222ccc333" alt="Bar" class="img-fluid rounded">
+      <img src="dish 1.webp" alt="Dish 1" class="img-fluid rounded">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=dd444eee555" alt="Dish 2" class="img-fluid rounded">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ee555fff666" alt="Dessert" class="img-fluid rounded">
+      <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=ff666ggg777" alt="Staff" class="img-fluid rounded">
+    </div>
+    <p class="mt-3">Click any image to enlarge.</p>
+  </section>
+
+  <section class="container section" aria-labelledby="events">
+    <h2 id="events" class="section-title">Private events</h2>
+    <p>We host private dining, birthdays and business lunches. Contact us to discuss menus and options.</p>
+    <a class="btn btn-outline-secondary" href="contact.html#events">Enquire about events</a>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h5>TastyBites</h5>
+        <p class="footer-note">Authentic food, warm hospitality — since 2010. 123 Riverwalk Ave, London</p>
+      </div>
+      <div class="col-md-3">
+        <h6>Opening</h6>
+        <p class="mb-0">Mon–Sun: 11:00 — 22:00</p>
+        <p id="openStatus" class="mb-0"></p>
+      </div>
+      <div class="col-md-3 text-md-end">
+        <small>&copy; TastyBites 2025 • Built for COM109 coursework</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/gallery.js"></script>
+
+</body>
+</html>

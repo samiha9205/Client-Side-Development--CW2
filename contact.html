@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact & Reservations — TastyBites</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">TastyBites</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn btn-sm ms-3 btn-outline-danger" href="contact.html#reservations">Reserve</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="container section" id="contact-info" aria-labelledby="contact-heading">
+    <h1 id="contact-heading" class="section-title">Contact & Reservations</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Location</h5>
+        <p>123 Riverwalk Ave, London. Nearest tube: Riverwalk Station — 5 minutes walk.</p>
+        <h5>Opening Hours</h5>
+        <p>Mon–Sun: 11:00 — 22:00</p>
+        <h5>Phone & Email</h5>
+        <p>+44 20 7946 0991<br>hello@tastybites.example</p>
+      </div>
+      <div class="col-md-6">
+        <h5>Find us</h5>
+        <div style="width:100%;height:220px;background:#e9ecef;display:flex;align-items:center;justify-content:center;border-radius:8px">
+          <img src="location.png" width="2500" height="200">>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container section" id="reservations" aria-labelledby="reservations-heading">
+    <h2 id="reservations-heading" class="section-title">Make a reservation</h2>
+    <p>Complete the form below. We will confirm by email.</p>
+    <div id="resAlert" class="mb-3" aria-live="polite"></div>
+    <form id="reservationForm" novalidate>
+      <div class="row g-2">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Full name</label>
+          <input id="name" name="name" type="text" class="form-control" required aria-required="true" minlength="2">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" type="email" class="form-control" required aria-required="true">
+        </div>
+        <div class="col-md-4">
+          <label for="date" class="form-label">Date</label>
+          <input id="date" name="date" type="date" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label for="time" class="form-label">Time</label>
+          <input id="time" name="time" type="time" class="form-control" required>
+        </div>
+        <div class="col-md-4">
+          <label for="people" class="form-label">Covers</label>
+          <input id="people" name="people" type="number" min="1" max="20" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone</label>
+          <input id="phone" name="phone" type="tel" class="form-control" pattern="\+?\d(7, 15)">
+          <div class="form-text">Include country code for reservations from outside the UK.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="notes" class="form-label">Allergies / notes</label>
+          <input id="notes" name="notes" type="text" class="form-control" placeholder="Dietary requirements (optional)">
+        </div>
+        <div class="col-12">
+          <button class="btn btn-danger" type="submit">Request Reservation</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="container section" id="events" aria-labelledby="events-heading">
+    <h2 id="events-heading" class="section-title">Events & Private Dining</h2>
+    <p>We host up to 40 guests for private dining. We offer set menus and bespoke packages. Contact us to request a quote.</p>
+    <a class="btn btn-outline-secondary" href="mailto:events@tastybites.example">Email events@tastybites.example</a>
+  </section>
+
+  <section class="container section" id="faq" aria-labelledby="faq-heading">
+    <h2 id="faq-heading" class="section-title">Frequently asked</h2>
+    <dl>
+      <dt>Do you offer vegetarian options?</dt>
+      <dd>Yes. Many dishes are available vegetarian — please ask staff.</dd>
+      <dt>Can I book for large groups?</dt>
+      <dd>Yes — contact events@tastybites.example and we will arrange menus and deposits.</dd>
+    </dl>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h5>TastyBites</h5>
+        <p class="footer-note">Authentic food, warm hospitality — since 2010. 123 Riverwalk Ave, London</p>
+      </div>
+      <div class="col-md-3">
+        <h6>Opening</h6>
+        <p class="mb-0">Mon–Sun: 11:00 — 22:00</p>
+        <p id="openStatus" class="mb-0"></p>
+      </div>
+      <div class="col-md-3 text-md-end">
+        <small>&copy; TastyBites 2025 • Built for COM109 coursework</small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/contact.js"></script>
+
+</body>
+</html>
